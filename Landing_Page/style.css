@@ -1,1 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+:root
+{
+  --header-height: 7rem;
+  --font-semi: 600;
+  --body-font: 'Poppins', sans-serif;
+  --header-font:'Playfair Dispaly', sans-serif;
+  --background-color:darkgrey;
+  --margin: 0;
+  --color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Styling for the header */
+header {
+    width: 100%;
+    position: relative;
+    font-family: var(--header-font);
+    height: var(--header-height);
+    background-color: #FCB0B3; /* Add a background color  */
+    z-index: 1000; /* Ensure the header stays on top */
+    padding: 0 20px;
+    position: fixed;
+   
+}
+
+/* Styling for the navigation bar */
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Add some padding for better spacing */
+    font-weight: var(--font-semi);
+}
+
+/* Styling for navigation links */
+.nav a {
+    color: var(--color);
+    text-decoration: none; /* Ensure links have no underline by default */
+    display: flex;
+    align-items: center;
+
+}
+
+/* Styling for the navigation list items */
+.nav_list {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Remove bullets from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for individual list items */
+.nav_list li {
+    margin-left: 15px; /* Adjust spacing between items */
+    margin-right: 30px;
+
+
+}
+
+/* Additional styles for icons if needed */
+.nav_list li a i {
+   margin-right: 10px; /* Adjust spacing between icon and text */
+    font-size: 1.2em; /* Adjust icon size if needed */
+    padding-left: 5px; /* Add padding to the left to shift icons slightly to the left */
+}
+
+.nav hr{
+    border: none;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color:white;
+    border-radius: 5px;
+}
+body{
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: var(--color);
+}
+.section-title{
+  position: relative;
+  font-size: 20px;
+  color: #AA336A;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-title::after{
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: #AA336A;
+}
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+                                       /* ===== Home Section =====*/
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('homecandle.png'); 
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6f61; /* Button color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5a4d; /* Darker shade on hover */
+}
+                /* ===== Abiut Us Section =====*/
+ .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* This will help make it responsive */
+            margin: 20px;
+        }
+
+.about-section .about 
+{
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+.about-section p 
+{
+    text-align: center;
+    justify-content: center;
+}
+
+.about-section img 
+{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.read-more 
+{
+    color: #007bff; /* Link color */
+    cursor: pointer;
+    display: block;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.about-section button
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size:16px ;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #B76E79, #808080);
+    cursor: pointer;
+    margin-left: 40%;
+}
+.more-text 
+{
+     display: none;
+}
+            /* Shop Section */
+.shop-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.img_container {
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+
+           
+           /* Blog Section */
+
+
+.blog-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.blog-post {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+.blog-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.blog-des {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+                                            /* ===== CONTACT FORM =====*/
+.contact_container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact_left_title h2
+{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #AA336A;
+}
+.contact_left_title hr
+{
+    border: none;
+    height: 5px;
+    width: 120px;
+    margin-bottom: 5px;
+    background-color:#AA336A;
+    border-radius: 20px;
+}
+.contact_input
+{
+    border: none;
+    height: 50px;
+    width: 400px;
+    color: #666;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    outline: 1px solid;
+}
+.contact_left textarea
+{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact_input: focus
+{
+border: 2px solid #005477;
+}
+.contact_left button
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size:16px ;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #B76E79, #808080);
+    cursor: pointer;
+}
+                        /* Footer styles */
+.footer {
+    background-color: #FCB0B3;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 20px;
+    color: white;
+}
+footer .footer-line {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer .footer-line p {
+    margin: 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4682b4; /* Darker shade of Peace Blue for hover */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; /* Align all items in a column */
+    gap: 20px; /* Add space between each contact item */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    gap: 10px;
+    background-color: #2b2b2b;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #b0c4de; /* Peace Blue Color */
+}
+
+.contact-item p, .contact-item a {
+    margin: 0;
+    color: #b0c4de; /* Peace Blue Color */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
 
