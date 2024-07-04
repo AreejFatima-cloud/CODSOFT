@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Pge</title>
+    <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <!--===== Header =====-->
+    <header>
+        <nav class="nav">
+        <div>
+            <a href="#"><i class="bx bx-candles"></i>Arish_Candles</a>
+            <hr>
+            <p>Where Light Meets Fragrance.</p>
+
+        </div>
+        <div class="nav_menu">
+            <ul class="nav_list">
+           <li><a href="#Home"><i class='bx bx-home'></i></a></li>
+                <li><a href="#About"><i class='bx bx-info-circle'></i></a></li>
+                <li><a href="#Shop"><i class='bx bx-shopping-bag'></i></a></li>
+                <li><a href="#Blog"><i class='bx bx-news'></i></a></li>
+                <li><a href="#Contact"><i class='bx bx-envelope'></i></a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+                               <!--===== Home =====-->
+            <section class="landing-page" id="Home">
+                  <div class="content">
+            <h1 class="main-heading">Welcome to Arish_Candles</h1>
+            <p class="description">Discover our exclusive collection of handcrafted candles, perfect for every occasion.</p>
+            <div class="buttons">
+                <a href="#Shop" class="btn">Shop Now</a>
+                <a href="#About" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+                        <!--===== About =====-->
+            <section class="about section " id="About">
+                <h2 class="section-title">About Us</h2>
+                    <div class="about-section">
+                        <p>
+                            At Arish_Candles, we believe in the power of a single flame to transform an environment, evoke emotions, and create unforgettable memories. Our candles are made with eco-friendly materials, and we strive to minimize our carbon footprint through sustainable practices in every step of our production process. We believe in giving back to our community and supporting causes that align with our values of sustainability and well-being.</p>
+
+                        <p class="more-text">
+                            Our journey began with a passion for creating exquisite candles that combine beauty, quality, and sustainability. Every candle we offer is meticulously crafted with natural ingredients and infused with enchanting fragrances to ensure a pure and long-lasting burn. We take pride in our artisanal process, where each candle is poured by hand, ensuring exceptional attention to detail and superior craftsmanship.
+                        </p>
+                        </div>
+                        <div class="about-section">
+                    <button class="read-more" onclick="toggleReadMore()">Read More</button>
+                <div class="about-section">
+            </section>
+            <!--===== Shop =====-->
+             <section class="shop-section" id="Shop">
+        <h2 class="section-title">Shop</h2>
+        <div class="img_container">
+        <div class="product">
+            <img src="shop.jfif" alt="Product 1">
+            <button class="btn btn-primary"><i class='bx bx-cart'> Add to Cart</i></button>
+        </div>
+
+        <div class="product">
+            <img src="shop1.jfif" alt="Product 2">
+            <button class="btn btn-primary"><i class='bx bx-cart'> Add to Cart</i></button>
+        </div>
+
+        <div class="product">
+            <img src="shop2.jfif" alt="Product 3">
+            <button class="btn btn-primary"><i class='bx bx-cart'> Add to Cart</i></button>
+        </div>
+    </div>
+    </section>
+                                <!--===== Blog Section =====-->
+         <section class="blog-section" id="Blog">
+        <h2 class="section-title">Our Blog</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="blog.jfif" alt="Blog Post 2">
+                <h3 class="blog-title">Lavender Bliss Candle</h3>
+                <p class="blog-des">Indulge in the soothing aroma of our Lavender Bliss Candle. Hand-poured with natural soy wax and infused with pure lavender essential oil, this candle brings a sense of calm and tranquility to any space. Perfect for unwinding after a long day.</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+
+            <div class="blog-post">
+                <img src="blog2.jfif" alt="Blog Post 2">
+                <h3 class="blog-title">Citrus Zest Candle</h3>
+                <p class="blog-excerpt">SBrighten your home with the invigorating scent of our Citrus Zest Candle. Crafted with a blend of lemon, lime, and orange essential oils, this candle is designed to energize and refresh. Ideal for creating a lively and vibrant atmosphere.</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+
+            <div class="blog-post">
+                <img src="blog3.jfif" alt="Blog Post 3">
+                <h3 class="blog-title">Vanilla Spice Candle</h3>
+                <p class="blog-des">Experience the warm and comforting scent of our Vanilla Spice Candle. Made with a rich blend of vanilla and cinnamon, this candle adds a cozy and inviting touch to your home. Perfect for those chilly evenings and intimate gatherings.</p>
+                <button class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </section>
+                        <!--===== CONTACT =====-->
+    <section class="contact section" id="Contact">
+                <h2 class="section-title">Contact Me</h2>
+                 <div class="contact_container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact_left">
+                        <div class="contact_left_title">
+                            <h2>For Quieries</h2>
+                                <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="371b9ddd-a5df-4c03-9b74-5a757bdc41dc">
+                        <input type="text" name="name" placeholder="Your Name" class="contact_input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact_input" required>
+                        <textarea name="Message" placeholder="Your Message"  class="contact_input" required></textarea>
+                        <button type="submit">Submit >> </button>
+                    </form>     
+                    <div class="contact_right">
+                        <img src="C:\Users\hp\Downloads\landing_contact.png">
+                    </div>
+                </div>
+            </section>
+             <!--===== FOOTER =====-->
+        <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-content">
+                            <div class="footer-info">
+                                <h2>Get in Touch</h2>
+                                    <p>Illuminate your world with our hand-crafted candles. Discover the perfect blend of light and fragrance that transforms any space into a haven of warmth and serenity.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <p>Aeej Fatima</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <p><a href="mailto:areejfarima495@gmail.com">areejfarima495@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                <p>Phone: +92 123456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+            <p>&copy; 2024 Areej Fatima. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
 
